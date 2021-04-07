@@ -110,10 +110,10 @@
   }
 
   function getQuantityValueAndUnit(ob) {
-    if (typeof ob != 'undefined' &&
-        typeof ob.valueQuantity != 'undefined' &&
-        typeof ob.valueQuantity.value != 'undefined') {
-        if (ob.valueQuantity.unit != 'undefined') {
+    if (typeof ob !== 'undefined' &&
+        typeof ob.valueQuantity !== 'undefined' &&
+        typeof ob.valueQuantity.value !== 'undefined') {
+        if (typeof ob.valueQuantity.unit != 'undefined') {
           return ob.valueQuantity.value + ' ' + ob.valueQuantity.unit;
         } else {
           return '' + ob.valueQuantity;
