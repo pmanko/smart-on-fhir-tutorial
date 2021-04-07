@@ -109,7 +109,7 @@
         if (typeof ob.valueQuantity.unit != 'undefined') {
           return ob.valueQuantity.value + ' ' + ob.valueQuantity.unit;
         } else {
-          return '' + ob.valueQuantity;
+          return '' + ob.valueQuantity.value;
         }
     } else {
       return undefined;
