@@ -89,7 +89,7 @@
       'http://loinc.org|55284-4'
     ].join(","));
     
-    return smart.request("Observation?" + query)
+    return smart.request("Observation?" + query, { flat: true })
   }
 
   function getBloodPressureValue(BPObservations, typeOfPressure) {
